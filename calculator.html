@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  
+<script>
+function calculate(a, b) {
+  const add = a + b;
+  const subtract = a - b;
+  const multiply = a * b;
+  const divide = a / b;
+
+  return [add, subtract, multiply, divide];
+}
+
+const [add, subtract, multiply, divide] = calculate(10, 7);
+
+document.write("<p>Sum: " + add + "</p>");
+document.write("<p>Difference " + subtract + "</p>");
+document.write("<p>Product: " + multiply + "</p>");
+document.write("<p>Quotient " + divide + "</p>");
+
+
+
+
+//                          <Spread Operator>
+
+
+
+
+const  numberone  = [1,2,3,4,5,6,7,8,9];
+const  numbertwo =  [0,1,2,3,4,5,6,7,8,9];
+const numbers =  [...numberone, ...numbertwo];
+document.write(numbers);
+</script>
+
+</body>
+</html>
